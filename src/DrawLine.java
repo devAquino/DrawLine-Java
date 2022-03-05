@@ -10,7 +10,10 @@ public class DrawLine extends JPanel{
     que recebe como parâmetro uma referência da classe Graphics
     */
     public void paintComponent(Graphics graphics){
-        /* Acessando o método da super classe. */
+        /* Acessando o método da super classe. 
+           No entanto não é necessário, se voce deletar super.paintComponent(graphics),
+           funcionará corretamente.
+        */
         super.paintComponent(graphics);
         /*Desenhando a linha (x1,y1) (x2,y2), os valores devem ser do tipo int */
         graphics.drawLine(0, 0, 250, 250);
